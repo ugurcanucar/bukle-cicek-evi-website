@@ -1,0 +1,42 @@
+.general_wrapper {
+  @apply min-w-[100vw] max-w-[100vw] min-h-[100vh] bg-red-50;
+
+  .navbar {
+    @apply hidden lg:flex z-50 items-center justify-between px-10 py-3  whitespace-nowrap;
+    background: rgba(255, 255, 255, 0.73);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    .logo {
+      @apply text-xl font-normal;
+    }
+
+    .nav_menu {
+      @apply flex gap-20 items-center;
+      .nav_menu_list_wrapper {
+        @apply flex items-center gap-8;
+
+        li {
+          @apply hover:cursor-pointer whitespace-nowrap rounded-md px-4 py-2 hover:bg-[--stone-color] duration-500 transition-colors;
+        }
+      }
+
+      .search_logo {
+        @apply hover:cursor-pointer;
+      }
+    }
+  }
+  
+  .hero_section {
+    @apply w-screen h-[100vh] bg-cover py-5 flex flex-col items-center;
+    background-image: url("../assets/images/hero-section.jpg");
+    background-repeat: no-repeat;
+
+    
+
+ 
+  }
+}

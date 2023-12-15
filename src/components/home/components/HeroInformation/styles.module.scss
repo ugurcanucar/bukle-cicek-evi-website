@@ -1,0 +1,35 @@
+.hero_information_wrapper{
+    @apply ml-14 h-[95%] flex flex-col justify-center items-end w-full;
+    .information_wrapper {
+        @apply w-full flex flex-col items-end justify-center;
+  
+        .hero_information {
+          @apply lg:w-1/2 h-full flex flex-col relative gap-5;
+  
+          .title {
+            @apply absolute -top-[65%];
+            color: #624d363f;
+            font-size: 5rem;
+          }
+          .sub_title {
+            @apply text-4xl;
+            color: var(--dark-stone-color);
+          }
+          .line {
+            @apply relative;
+            &::after {
+              background-image: url("../../../../assets/icons/zap.svg");
+              background-repeat: no-repeat;
+              background-size: 100% 50%;
+              content: "";
+              display: block;
+              height: 1em;
+              left: -0.2em;
+              position: absolute;
+              top: calc(100% - 0.15em);
+              width: calc(100% + 0.4em); 
+            }
+          }
+        }
+      }
+}
